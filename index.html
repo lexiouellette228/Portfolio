@@ -1,0 +1,389 @@
+<!-- HTML, JavaScript, CSS code for my personal portfolio website -->
+<!DOCTYPE html>
+<html lang="en">
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Lexi Ouellette</div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#tech">Tech Stack</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Lexi Ouellette | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- JavaScript for form submission -->
+<script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form = document.getElementById("contact-form");
+  
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json",
+        },
+      }).then((response) => {
+        if (response.ok) {
+          Swal.fire({
+            icon: "success",
+            title: "Message Sent!",
+            text: "Thank you for reaching out — I'll get back to you soon.",
+            confirmButtonColor: "#ff00b3",
+          });
+          form.reset();
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Oops!",
+            text: "Something went wrong. Please try again.",
+            confirmButtonColor: "#ff00b3",
+          });
+        }
+      });
+  
+      return false;
+    }
+  </script>
+
+<!-- Body section -->
+<body>
+<!-- Sidebar -->
+    <div class="sidebar">
+        <a href="mailto:lexiouellette5@gmail.com" target="_blank" class="sidebar-link" title="Email">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/secured-letter.png" alt="Email" />
+        </a>
+        <a href="https://github.com/lexiouellette228" target="_blank" class="sidebar-link" title="GitHub">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="filter: invert(1);" />
+        </a>
+        <a href="https://linkedin.com/in/lexio" target="_blank" class="sidebar-link" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+        </a>
+    </div>
+  
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content animated">
+        <img src="images/profile.jpg" alt="Lexi Ouellette" class="hero-img" />
+        <h1 class="fade-slide">Hi, I'm Lexi Ouellette</h1>
+        <p class="fade-slide delay-1">Bachelor of Science in Computer Science | Software Developer </p>
+        <a href="#projects" class="btn fade-slide delay-2">View My Work</a>
+        </div>
+   </section>
+  
+   <!-- About Section -->
+    <section id="about" class="about fade-in-section">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>
+              I'm a recent Computer Science graduate (May 2025) with a passion for building user-friendly and efficient software solutions. During college, I gained experience through projects in web development, data visualization, and system design. I'm currently seeking opportunities to grow as a developer and contribute to real-world applications.
+            </p>
+            <p>
+                I enjoy working with JavaScript, React, Python, C++, Qiskit, and SQL, and I'm always learning new technologies. Outside of coding, I love exploring tech communities, participating in hackathons, and mentoring others.
+            </p>
+            <p>
+                Outside of coding, I’m usually planning my next trip, solving a puzzle, or getting lost in a good book. I love exploring new places and trying new things. I enjoy a good challenge and am always learning something new.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech fade-in-section">
+        <div class="tech-container">
+        <h2>Tech Stack</h2>
+        <div class="tech-grid">
+            <div class="tech-item" title="HTML5">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <p>HTML5</p>
+            </div>
+            <div class="tech-item" title="CSS3">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <p>CSS3</p>
+            </div>
+            <div class="tech-item" title="JavaScript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <p>JavaScript</p>
+            </div>
+            <div class="tech-item" title="React">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            <p>React</p>
+            </div>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-item" title="Python">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <p>Python</p>
+            </div>
+            <div class="tech-item" title="Node.js">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            <p>Node.js</p>
+            </div>
+            <div class="tech-item" title="C++">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+            <p>C++</p>
+            </div>
+            <div class="tech-item" title="SQL">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+            <p>SQL</p>
+            </div>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-item" title="GitHub">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="filter: invert(1);" />
+            <p>GitHub</p>
+            </div>
+            <div class="tech-item" title="Power BI">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" />
+            <p>Power BI</p>
+            </div>
+            <div class="tech-item" title="Visual Studio Code">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+                <p>VS Code</p>
+            </div>
+            <div class="tech-item" title="Qiskit">
+                <img src="images/qiskit.svg" alt="Qiskit" style="filter: invert(1);" />
+                <p>Qiskit</p>
+            </div>
+        </div>
+        </div>
+    </section>
+  
+  
+  <!-- Projects Section -->
+<section id="projects" class="projects fade-in-section">
+    <div class="projects-container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+  
+        <div class="project-card">
+          <h3>POS System</h3>
+          <p>A full-stack point-of-sale app using React, SQLite, and Square APIs. Supports cart, invoice, and inventory features.</p>
+          <a>GitHub (coming soon) </a>
+          <a href="#projects" onclick="openModal('modal-pos')">Preview</a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" id="modal-pos">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-pos')">&times;</span>
+            <img src="images/POS1.png" alt="POS Screenshot 1" />
+            <img src="images/POS2.png" alt="POS Screenshot 2" />
+            <img src="images/POS3.png" alt="POS Screenshot 3" />
+            <img src="images/POS4.png" alt="POS Screenshot 4" />
+            <img src="images/POS5.png" alt="POS Screenshot 5" />
+            <img src="images/POS6.png" alt="POS Screenshot 6" />
+            <img src="images/POS7.png" alt="POS Screenshot 7" />
+            <img src="images/POS8.png" alt="POS Screenshot 8" />
+            <img src="images/POS9.png" alt="POS Screenshot 9" />
+            <img src="images/POS10.png" alt="POS Screenshot 10" />
+            </div>
+        </div>
+  
+        <div class="project-card">
+          <h3>Wedding Planner App</h3>
+          <p>A Python-based wedding planning tool that generates optimized seating charts by grouping guests. Includes a table calculator that suggests table layouts based on guest count. </p>
+          <a href="https://github.com/lexiouellette228/WeddingHelper/tree/main" target="_blank">GitHub</a>
+          <a href="#projects" onclick="openModal('modal-wedding')">Preview</a>
+        </div>
+  
+        <!-- Modal -->
+        <div class="modal" id="modal-wedding">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-wedding')">&times;</span>
+            <img src="images/SeatingChart1.png" alt="Wedding Screenshot 1" />
+            <img src="images/TableCalculator.png" alt="Wedding Screenshot 2" />
+            </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Quantum Circuit Cutting</h3>
+          <p>Demonstration of quantum circuit cutting using Qiskit, IMBQ, and AerSimulator.</p>
+          <a href="https://github.com/lexiouellette228/Quantum_Circuit_Cutting" target="_blank">GitHub</a>
+          <a href="#projects" onclick="openModal('modal-quantum')">Preview</a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" id="modal-quantum">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-quantum')">&times;</span>
+            <img src="images/QC1.png" alt="Quantum Project Screenshot 1" />
+            <img src="images/QC2.png" alt="Quantum Project Screenshot 2" />
+            <img src="images/QC3.png" alt="Quantum Project Screenshot 3" />
+            <img src="images/QC4.png" alt="Quantum Project Screenshot 4" />
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <h3>Wedding Website</h3>
+            <p>React app that allows invited guests to RSVP securely, view event details, browse travel and accommodation info, and more.</p>
+            <a href="https://github.com/lexiouellette228/wedding-website" target="_blank">GitHub</a>
+            <a href="https://www.lexiandmason.org/" target="_blank">Live Website</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Digital Treasure Hunt</h3>
+            <p>An interactive web application designed to engage users in solving a series of puzzles and clues to find the hidden treasure.</p>
+            <a href="https://github.com/lexiouellette228/DigitalTreasureHunt" target="_blank">GitHub</a>
+            <a href="#projects" onclick="openModal('modal-cyber')">Preview</a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" id="modal-cyber">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-cyber')">&times;</span>
+            <img src="images/treasure1.png" alt="DigitalTreasureHunt Screenshot 1" />
+            <img src="images/treasure2.png" alt="DigitalTreasureHunt Screenshot 2" />
+            <img src="images/treasure3.png" alt="DigitalTreasureHunt Screenshot 3" />
+            <img src="images/treasure4.png" alt="DigitalTreasureHunt Screenshot 4" />
+            <img src="images/treasure5.png" alt="DigitalTreasureHunt Screenshot 5" />
+            <img src="images/treasure6.png" alt="DigitalTreasureHunt Screenshot 6" />
+            <img src="images/treasure7.png" alt="DigitalTreasureHunt Screenshot 7" />
+            <img src="images/treasure8.png" alt="DigitalTreasureHunt Screenshot 8" />
+            <img src="images/treasure11.png" alt="DigitalTreasureHunt Screenshot 9" />
+            <img src="images/treasure12.png" alt="DigitalTreasureHunt Screenshot 10" />
+            <img src="images/treasure13.png" alt="DigitalTreasureHunt Screenshot 11" />
+            <img src="images/treasure14.png" alt="DigitalTreasureHunt Screenshot 12" />
+            <img src="images/treasure15.png" alt="DigitalTreasureHunt Screenshot 13" />
+            <img src="images/treasure9.png" alt="DigitalTreasureHunt Screenshot 14" />
+            <img src="images/treasure10.png" alt="DigitalTreasureHunt Screenshot 15" />
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Appliance Store Website</h3>
+            <p>React + Bootstrap app that allows customers to view current inventory and learn more about the business.</p>
+            <a href="https://github.com/lexiouellette228/Appliance_Store_Website" target="_blank">GitHub</a>
+            <a href="https://www.grossappliance.com/" target="_blank">Live Website</a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact fade-in-section">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <p>I'd love to connect! Feel free to email me directly or use the form below.</p>
+      
+      <div class="contact-info">
+        <p>Email: <a href="mailto:lexiouellette5@gmail.com">lexiouellette5.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/lexio" target="_blank">linkedin.com/in/lexio</a></p>
+        <p>GitHub: <a href="https://github.com/lexiouellette228">github.com/lexiouellette228</a></p>
+      </div>
+    
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/mnnvdeod"
+        method="POST"
+        class="contact-form"
+        onsubmit="return handleSubmit(event)"
+        >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+</section>
+</body>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+      <p>&copy; <span id="year"></span> Lexi Ouellette. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/lexiouellette228" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/lexio" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+</html>
+
+<!-- JavaScript for nav links -->
+<script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-links a");
+  
+    const observerOptions = {
+      threshold: 0.5,
+    };
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+          });
+          const activeLink = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+          if (activeLink) activeLink.classList.add("active");
+        }
+      });
+    }, observerOptions);
+  
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+  </script>
+  
+<!-- JavaScript for scolling -->
+<script>
+    const faders = document.querySelectorAll('.fade-in-section');
+  
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -100px 0px"
+    };
+  
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+  
+    faders.forEach(section => {
+      appearOnScroll.observe(section);
+    });
+</script>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<!-- JavaScript for modal -->
+<script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+  
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  
+    window.addEventListener("click", function (event) {
+      const modals = document.querySelectorAll(".modal");
+      modals.forEach((modal) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    });
+  </script>
+  
