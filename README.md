@@ -6,7 +6,7 @@ Welcome to my personal portfolio! This site showcases my projects, technical ski
 
 ## Live Demo
 
-➡️ [View Portfolio](https://yourusername.github.io/portfolio/)  
+View Portfolio (https://portfolio-pi-five-2tv1yi73mk.vercel.app/)  
 
 ---
 
