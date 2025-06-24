@@ -176,40 +176,39 @@
             <a href="#projects" onclick="openModal('modal-powerbi-screenshots')">Preview</a>
         </div>
 
-<!-- Read More Modal: Power BI Project -->
-<div class="modal" id="modal-powerbi-description">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal-powerbi-description')">&times;</span>
-    
-    <h3>Property Manager Reporting & Insights</h3>
+        <!-- Read More Modal -->
+        <div class="modal" id="modal-powerbi-description">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-powerbi-description')">&times;</span>
+            
+            <h3>Property Manager Reporting & Insights</h3>
+        
+            <h4>Overview</h4>
+            <ul>
+              <li>Enhanced transparency and efficiency of rental deposit refund payments using data analytics.</li>
+              <li>Analyzed anonymized datasets on disbursements, recipients, and properties to extract financial insights.</li>
+              <li>Built Power BI reports for performance tracking, error detection, and identifying geo/demographic trends.</li>
+              <li>Integrated Microsoft Fabric Lakehouse with SQL + Python to automate reporting and decision support.</li>
+            </ul>
+        
+            <h4>Tech Stack</h4>
+            <ul>
+              <li><strong>Microsoft Fabric</strong> – Lakehouse storage and PySpark SQL transformation</li>
+              <li><strong>Power BI Desktop</strong> – Interactive dashboards, DAX, and visuals</li>
+              <li><strong>Python (matplotlib, seaborn)</strong> – Custom visualizations and correlation analysis</li>
+              <li><strong>DAX</strong> – KPI calculations, dynamic fields, and grouped comparisons</li>
+            </ul>
+        
+            <h4>Data Sources</h4>
+            <ul>
+              <li><strong>Static Data</strong>: Disbursements, Recipient Payments, Feedback, Apartment Names</li>
+              <li><strong>Census Data</strong>: Income, Business activity, Unemployment, Education, Housing, Poverty, Family Demographics</li>
+              <li>Static data was provided by the company to evaluate refund program effectiveness.</li>
+              <li>Census data was collected to uncover external socioeconomic factors affecting completion rates.</li>
+            </ul>
+          </div>
+        </div>
 
-    <h4> Overview</h4>
-    <ul>
-      <li>Enhanced transparency and efficiency of rental deposit refund payments using data analytics.</li>
-      <li>Analyzed anonymized datasets on disbursements, recipients, and properties to extract financial insights.</li>
-      <li>Built Power BI reports for performance tracking, error detection, and identifying geo/demographic trends.</li>
-      <li>Integrated Microsoft Fabric Lakehouse with SQL + Python to automate reporting and decision support.</li>
-    </ul>
-
-    <h4> Technologies Used</h4>
-    <ul>
-      <li><strong>Microsoft Fabric</strong> – Lakehouse storage and PySpark SQL transformation</li>
-      <li><strong>Power BI Desktop</strong> – Interactive dashboards, DAX, and visuals</li>
-      <li><strong>Python (matplotlib, seaborn)</strong> – Custom visualizations and correlation analysis</li>
-      <li><strong>DAX</strong> – KPI calculations, dynamic fields, and grouped comparisons</li>
-    </ul>
-
-    <h4>Data Sources</h4>
-    <ul>
-      <li><strong>Static Data</strong>: Disbursements, Recipient Payments, Feedback, Apartment Names</li>
-      <li><strong>Census Data</strong>: Income, Business activity, Unemployment, Education, Housing, Poverty, Family Demographics</li>
-      <li>Static data was provided by the company to evaluate refund program effectiveness.</li>
-      <li>Census data was collected to uncover external socioeconomic factors affecting completion rates.</li>
-    </ul>
-  </div>
-</div>
-
-          
         <!-- Preview Modal -->
         <div class="modal" id="modal-powerbi-screenshots">
             <div class="modal-content">
@@ -232,16 +231,72 @@
         <div class="project-card">
             <h3>Appliance Store Website</h3>
             <p>React and Bootstrap based website that allows customers to view current inventory and learn more about the business. Deployed and managed with AWS.</p>
+            <a href="#projects" onclick="openModal('modal-grossapp-description')">Read More</a>
             <a href="https://github.com/lexiouellette228/Appliance_Store_Website" target="_blank">GitHub</a>
             <a href="https://www.grossappliance.com/" target="_blank">Live Website</a>
+        </div>
+
+        <!-- Read More Modal -->
+        <div class="modal" id="modal-grossapp-description">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-grossapp-description')">&times;</span>
+            
+            <h3>Appliance Store Website</h3>
+        
+            <h4> Features </h4>
+            <ul>
+              <li>Professional landing page with storefront image and description</li>
+              <li>Responsive navigation bar with smooth scrolling</li>
+              <li>Clickable inventory categories with product modal carousel</li>
+              <li>Embedded Google Maps for easy store location</li>
+              <li>Clean and responsive design</li>
+            </ul>
+        
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>React</strong> – Frontend framework</li>
+              <li><strong>React-Bootstrap </strong> –  UI components</li>
+              <li><strong>HTML5/CSS3 </strong> – Layout and styling</li>
+              <li><strong>JavaScript</strong> – Logic and interactivity</li>
+              <li><strong>AWS (Amazon Web Services) </strong> – Deployed and managed</li>
+            </ul>
+          </div>
         </div>
 
         <!-- Project Card --> 
         <div class="project-card">
           <h3>Quantum Circuit Cutting</h3>
           <p>Demonstration of quantum circuit cutting using Qiskit, IMBQ, and AerSimulator.</p>
+          <a href="#projects" onclick="openModal('modal-quantum-description')">Read More</a>
           <a href="https://github.com/lexiouellette228/Quantum_Circuit_Cutting" target="_blank">GitHub</a>
           <a href="#projects" onclick="openModal('modal-quantum')">Preview</a>
+        </div>
+
+        <!-- Read More Modal -->
+        <div class="modal" id="modal-quantum-description">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-quantum-description')">&times;</span>
+            
+            <h3>Quantum Circuit Cutting</h3>
+            <h4> Overview </h4>
+            <ul>
+              <li>We used wire cutting to split a 7-qubit circuit into two 4-qubit circuits, allowing broader circuit decomposition at the cost of added overhead.</li>
+              <li>This method uses Move instructions—functionally like swap gates—to transfer quantum state information between the two circuit halves via an ancillary circuit.</li>
+              <li>Each subcircuit is executed separately, once on a simulator and once on IBMQ’s quantum hardware.</li>
+              <li>The resulting sub-experiment data is used to build Quasiprobability Distributions, which are then combined to reconstruct the expectation value of the original 7-qubit circuit.</li>
+            </ul>
+
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>Python</strong> – For writing quantum circuit logic, estimation functions, and handling data</li>
+              <li><strong>Qiskit – IBM's open-source quantum computing SDK used to</strong> – Build and cut quantum circuits,  Execute on simulators (AerSimulator) and real quantum hardware (IBMQ backend), and Use Estimator for expectation value calculations </li>
+              <li><strong>IBM Quantum (IBMQ)</strong> – Cloud-accessible quantum hardware for running real quantum circuits </li>
+              <li><strong>Qiskit Runtime / Estimator V2</strong> – Used as the interactive environment to write, run, and visualize the experiments</li>
+              <li><strong>Google Colab + Jupyter Notebook </strong> – Used as the interactive environment to write, run, and visualize the experiments</li>
+              <li><strong>NumPy</strong> - For numerical operations such as rounding and calculating relative errors</li>
+              <li><strong>Matplotlib</strong> - For visualizing outputs</li>
+            </ul>
+          </div>
         </div>
 
         <!-- Modal -->
@@ -259,10 +314,29 @@
         <div class="project-card">
           <h3>Wedding Planner Algorithms</h3>
           <p>Python based wedding planning tools that generate optimized seating charts by grouping guests and table calculator that suggests table layouts based on guest count. </p>
+          <a href="#projects" onclick="openModal('modal-weddingalgo-description')">Read More</a>
           <a href="https://github.com/lexiouellette228/WeddingHelper/tree/main" target="_blank">GitHub</a>
           <a href="#projects" onclick="openModal('modal-wedding')">Preview</a>
         </div>
-  
+
+        <!-- Read More Modal -->
+        <div class="modal" id="modal-weddingalgo-description">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-weddingalgo-description')">&times;</span>
+            
+            <h3>Wedding Planner Algorithms</h3>
+            <h4> Overview </h4>
+            <ul>
+              <li>This project includes two tools for planning a wedding or large event:</li>
+              <li><strong>1. Seating Chart Generator</strong>Automatically assigns guests to tables based on their tag (bride_family, groom_family, couple, friend), keeping couples together and grouping families and friends logically.</li>
+              <li><strong>2. Table Calculator</strong></li>Calculates all possible table configurations (round, rectangle, or mixed) to accommodate a given number of guests. Includes min/max seating ranges and extra values.</li>
+            </ul>
+
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>Python</strong></li>
+          </div>
+        </div>
         <!-- Modal -->
         <div class="modal" id="modal-wedding">
             <div class="modal-content">
@@ -275,12 +349,56 @@
         <!-- Project Card --> 
         <div class="project-card">
           <h3>Wedding Planner App</h3>
-          <p>An interactive application built with React, React-Konva, and Bootstrap on the frontend and FastAPI backend. 
-             It allows users manage guest lists, create floor plans, generate seating charts, and calculate tables/seats based on guest count.</p>
+          <p>An interactive application built with React, React-Konva, and Bootstrap on the frontend and FastAPI backend. </p>
+          <a href="#projects" onclick="openModal('modal-planner-description')">Read More</a>
           <a href="https://github.com/lexiouellette228/WeddingPlanner" target="_blank">GitHub</a>
           <a href="#projects" onclick="openModal('modal-wedding-app')">Preview</a>
         </div>
-  
+
+         <!-- Read More Modal -->
+        <div class="modal" id="modal-planner-description">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-planner-description')">&times;</span>
+            
+            <h3>Wedding Planner Web Application</h3>
+            <h4> Overview </h4>
+            <ul>
+              <li>An interactive wedding seating chart planner built with React, React-Konva, and Bootstrap on the frontend, and FastAPI and JSON on the backend.</li>
+              <li>This tool allows users to manage guests, generate seating charts, create floor plans, and calculate tables/seats based on guest count.</li>
+              <li>Ingrated the wedding planner algorithms into a user friendly web application.</li>
+            </ul>
+
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>React</strong>Frontend framework</li>
+              <li><strong>React-Konva</strong>Canvas rendering</li>
+              <li><strong>Bootstap</strong>UI components</li>
+              <li><strong>Axios</strong>Frontend API requests</li>
+              <li><strong>FastAPI (Python)</strong>Backend logic and building APIs</li>
+              <li><strong>JSON</strong>Storage</li>
+              <li><strong>CORS</strong>Security</li>
+            </ul>
+              
+            <h4> Features </h4>
+            <ul>
+             <li>Upload or manually enter guest lists (with tags and groups) </li>
+             <li>Automatically calculate table arrangements based on guest count </li>
+             <li>Create round or rectangle tables with configurable seat counts</li>
+             <li>Visual floor plan canvas powered by React-Konva </li>
+             <li>Modal editor for table properties and guest assignments</li>
+             <li>Persist and load saved layouts using FastAPI</li>
+            </ul>
+          </div>
+        </div>
+          
+        <!-- Modal -->
+        <div class="modal" id="modal-wedding">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-wedding')">&times;</span>
+            <img src="images/SeatingChart1.png" alt="Wedding Screenshot 1" />
+            <img src="images/TableCalculator.png" alt="Wedding Screenshot 2" />               
+            </div>
+        </div>
         <!-- Modal -->
         <div class="modal" id="modal-wedding-app">
             <div class="modal-content">
@@ -301,21 +419,102 @@
         <!-- Project Card --> 
         <div class="project-card">
             <h3>Simple Protocol</h3>
-            <p>This project implements a basic TCP-based client-server protocol for controlling a virtual light. The protocol uses structured headers and logs all communication between a client and server to log files.</p>
+            <p>This project implements a basic TCP-based client-server protocol for controlling a virtual light.</p>
+            <a href="#projects" onclick="openModal('modal-sp-description')">Read More</a>
             <a href="https://github.com/lexiouellette228/Computer_Networking_Simple_Protocols" target="_blank">GitHub</a>
         </div>
 
+         <!-- Read More Modal -->
+        <div class="modal" id="modal-sp-description">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-sp-description')">&times;</span>
+            
+            <h3>Simple Protocol</h3>
+            <h4> Overview </h4>
+            <ul>
+              <li>This project implements a basic TCP-based client-server protocol for controlling a virtual light.</li>
+              <li>The protocol uses structured headers and logs all communication between a client and server to log files.</li>
+              <li>Communication is based on a simple protocol:</li>
+                <ul>
+                    <li>All messages start with a 12-byte header: version (4 bytes, integer), msg_type (4 bytes, integer), msg_length (4 bytes, integer)</li>
+                    <li>This is followed by a UTF-8 encoded message body<</li>
+                </ul>
+               <li>Message Types:</li>
+                <ul>
+                    <li>0: HELLO message</li>
+                    <li>1: LIGHTON command</li>
+                    <li>2: LIGHTOFF command</li>
+                </ul>
+            </ul>
+
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>Python</strong>Main implementation of client-server communication</li>
+              <li><strong>socket module</strong>TCP/IP-based socket programming</li>
+              <li><strong>struct module</strong>Packs/unpacks custom binary headers</li>
+              <li><strong>logging module</strong>Logs events, messages, and errors to console and file</li>
+              <li><strong>argparse</strong>arses command-line arguments for client/server setup</li>
+              <li><strong>pcap</strong>Analyze packets exchanged over the network</li>
+            </ul>
+              
+        </div>
+            
         <!-- Project Card --> 
         <div class="project-card">
             <h3>Network Packet Handling</h3>
-            <p>This project demonstrates custom network packet construction and transmission between a client and server using Python sockets. The packet includes a structured header and supports various payload types (integer, float, string).</p>
+            <p>This project demonstrates custom network packet construction and transmission between a client and server using Python sockets.</p>
+            <a href="#projects" onclick="openModal('modal-network-description')">Read More</a>
             <a href="https://github.com/lexiouellette228/Packet_Handling" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Read More Modal -->
+        <div class="modal" id="modal-network-description">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-network-description')">&times;</span>
+            
+            <h3>Network Packet Handling</h3>
+            <h4> Overview </h4>
+            <ul>
+              <li>This project demonstrates custom network packet construction and transmission between a client and server using Python sockets.</li>
+              <li>The packet includes a structured header and supports various payload types (integer, float, string).</li>
+              <li><strong>Client.py:</strong>Sends custom packets to the server.</li>
+              <li><strong>Server.py:</strong>Receives packets, parses the header and payload, and echoes the information back to the client.</li>
+                <ul>
+                    <li>All messages start with a 12-byte header: version (4 bytes, integer), msg_type (4 bytes, integer), msg_length (4 bytes, integer)</li>
+                    <li>This is followed by a UTF-8 encoded message body<</li>
+                </ul>
+               <li><strong>Package Format</strong>Each packet has:</li>
+                <ul>
+                    <li>Header (5 bytes total)</li>
+                        <ul>
+                          <li>version (1 byte)</li>
+                          <li>header_length (1 byte)</li>
+                          <li>service_type (1 byte): 1 = integer payload, 2 = float payload, 3 = string payload</li>
+                          <li>payload_length (2 bytes, unsigned short</li>
+                        </ul>
+                         <li>Payload (variable):</li>
+                        <ul>
+                          <li>Encoded based on service_type</li>
+                        </ul>
+                </ul>
+            </ul>
+              
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>Python</strong>Language for network logic and data handling</li>
+              <li><strong>socket module</strong>Enables TCP-based client-server communication</li>
+              <li><strong>struct module</strong>Handles packing/unpacking of binary headers and typed payloads</li>
+              <li><strong>UTF-8 & Binary</strong>Supports transmission of strings, integers, and floats over the wire</li>
+              <li><strong>argparse</strong>Provides a command-line interface for client configuration</li>
+            </ul>
+              
         </div>
 
         <!-- Project Card --> 
         <div class="project-card">
             <h3>Wedding Website</h3>
             <p>React based website that allows invited guests to RSVP securely, view event details, browse travel and accommodation info, and more.</p>
+            <a href="#projects" onclick="openModal('modal-powerbi-description')">Read More</a>
             <a href="https://github.com/lexiouellette228/wedding-website" target="_blank">GitHub</a>
             <a href="https://www.lexiandmason.org/" target="_blank">Live Website</a>
         </div>
@@ -325,6 +524,7 @@
         <div class="project-card">
           <h3>POS System</h3>
           <p>A full-stack point-of-sale app using React, SQLite, and Square APIs. Supports cart, invoice, and inventory features.</p>
+          <a href="#projects" onclick="openModal('modal-powerbi-description')">Read More</a>
           <a>GitHub (coming soon) </a>
           <a href="#projects" onclick="openModal('modal-pos')">Preview</a>
         </div>
@@ -350,6 +550,7 @@
         <div class="project-card">
             <h3>Digital Treasure Hunt</h3>
             <p>An interactive web application designed to engage users in solving a series of puzzles and clues to find the hidden treasure.</p>
+            <a href="#projects" onclick="openModal('modal-powerbi-description')">Read More</a>
             <a href="https://github.com/lexiouellette228/DigitalTreasureHunt" target="_blank">GitHub</a>
             <a href="#projects" onclick="openModal('modal-cyber')">Preview</a>
         </div>
@@ -380,6 +581,7 @@
         <div class="project-card">
             <h3>Portfolio Website (this website)</h3>
             <p>A fully responsive and interactive personal portfolio website built with HTML, CSS, and JavaScript. It showcases my projects, technical skills, and contact information with animations, a modern design, and a dynamic contact form.</p>
+            <a href="#projects" onclick="openModal('modal-powerbi-description')">Read More</a>
             <a href="https://github.com/lexiouellette228/Portfolio" target="_blank">GitHub</a>
             <a>You are viewing the live website, deployed using Vercel. </a>
         </div>
