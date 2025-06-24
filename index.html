@@ -308,6 +308,49 @@
             </ul>
           </div>
         </div>
+
+                <!-- Project Card --> 
+        <div class="project-card">
+            <h3>Simple Protocol</h3>
+            <p>This project implements a basic TCP-based client-server protocol for controlling a virtual light.</p>
+            <a href="#projects" onclick="openModal('modal-sp-description')">Read More</a>
+            <a href="https://github.com/lexiouellette228/Computer_Networking_Simple_Protocols" target="_blank">GitHub</a>
+        </div>
+
+         <!-- Read More Modal -->
+        <div class="modal" id="modal-sp-description">
+          <div class="modal-content ul">
+            <span class="close" onclick="closeModal('modal-sp-description')">&times;</span>
+            
+            <h3>Simple Protocol</h3>
+            <h4> Overview </h4>
+            <ul>
+              <li>This project implements a basic TCP-based client-server protocol for controlling a virtual light.</li>
+              <li>The protocol uses structured headers and logs all communication between a client and server to log files.</li>
+              <li>Communication is based on a simple protocol:</li>
+                <ul>
+                    <li>All messages start with a 12-byte header: version (4 bytes, integer), msg_type (4 bytes, integer), msg_length (4 bytes, integer)</li>
+                    <li>This is followed by a UTF-8 encoded message body<</li>
+                </ul>
+               <li>Message Types:</li>
+                <ul>
+                    <li>0: HELLO message</li>
+                    <li>1: LIGHTON command</li>
+                    <li>2: LIGHTOFF command</li>
+                </ul>
+            </ul>
+
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>Python</strong> - Main implementation of client-server communication</li>
+              <li><strong>socket module</strong> - TCP/IP-based socket programming</li>
+              <li><strong>struct module</strong> - Packs/unpacks custom binary headers</li>
+              <li><strong>logging module</strong> - Logs events, messages, and errors to console and file</li>
+              <li><strong>argparse</strong> - command-line arguments for client/server setup</li>
+              <li><strong>pcap</strong> - Analyze packets exchanged over the network</li>
+            </ul>
+          </div>
+        </div>
           
         <!-- Project Card --> 
         <div class="project-card">
@@ -417,48 +460,6 @@
             </div>
         </div>
           
-        <!-- Project Card --> 
-        <div class="project-card">
-            <h3>Simple Protocol</h3>
-            <p>This project implements a basic TCP-based client-server protocol for controlling a virtual light.</p>
-            <a href="#projects" onclick="openModal('modal-sp-description')">Read More</a>
-            <a href="https://github.com/lexiouellette228/Computer_Networking_Simple_Protocols" target="_blank">GitHub</a>
-        </div>
-
-         <!-- Read More Modal -->
-        <div class="modal" id="modal-sp-description">
-          <div class="modal-content ul">
-            <span class="close" onclick="closeModal('modal-sp-description')">&times;</span>
-            
-            <h3>Simple Protocol</h3>
-            <h4> Overview </h4>
-            <ul>
-              <li>This project implements a basic TCP-based client-server protocol for controlling a virtual light.</li>
-              <li>The protocol uses structured headers and logs all communication between a client and server to log files.</li>
-              <li>Communication is based on a simple protocol:</li>
-                <ul>
-                    <li>All messages start with a 12-byte header: version (4 bytes, integer), msg_type (4 bytes, integer), msg_length (4 bytes, integer)</li>
-                    <li>This is followed by a UTF-8 encoded message body<</li>
-                </ul>
-               <li>Message Types:</li>
-                <ul>
-                    <li>0: HELLO message</li>
-                    <li>1: LIGHTON command</li>
-                    <li>2: LIGHTOFF command</li>
-                </ul>
-            </ul>
-
-            <h4> Tech Stack </h4>
-            <ul>
-              <li><strong>Python</strong> - Main implementation of client-server communication</li>
-              <li><strong>socket module</strong> - TCP/IP-based socket programming</li>
-              <li><strong>struct module</strong> - Packs/unpacks custom binary headers</li>
-              <li><strong>logging module</strong> - Logs events, messages, and errors to console and file</li>
-              <li><strong>argparse</strong> - command-line arguments for client/server setup</li>
-              <li><strong>pcap</strong> - Analyze packets exchanged over the network</li>
-            </ul>
-          </div>
-        </div>
             
         <!-- Project Card --> 
         <div class="project-card">
