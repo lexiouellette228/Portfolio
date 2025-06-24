@@ -176,40 +176,39 @@
             <a href="#projects" onclick="openModal('modal-powerbi-screenshots')">Preview</a>
         </div>
 
-        <!-- Read More Modal -->
-        <div class="modal" id="modal-powerbi-description">
-            <div class="modal-content">
-            <span class="close" onclick="closeModal('modal-powerbi-description')">&times;</span>
-                <strong>
-                    Overview:  
-                </strong>
-                    <ul>
-                        <li>This project focuses on leveraging data analytics to enhance the efficiency and transparency of rental deposit refund payments. </li>
-                        <li>The project analyzes anonymized datasets related to disbursements, recipients, and properties to provide critical financial insights. </li>
-                        <li>Key objectives include developing Power BI reports for high-level and granular performance tracking, identifying anomalies such as error spikes or payment expirations, and uncovering geographic and demographic trends impacting payment completion rates. </li>
-                        <li> Utilizing Microsoft Fabric Lakehouse for data storage, along with SQL and Python for data processing, this project enhances decision-making through automated reporting. </li>
-                   </ul>
-                <strong>
-                    Technologies: 
-                </strong>
-                    <ul>
-                       <li>Microsoft Fabric: For Lakehouse storage and PySpark SQL transformation </li>
-                       <li>Power BI Desktop: For visual dashboards, DAX measures, and interactivity </li>
-                       <li>Python (matplotlib, seaborn): For customized visuals and correlation plots </li>
-                       <li>DAX: For dynamic field switching, KPI calculations, and group analysis </li>
-                    </ul>
+<!-- Read More Modal: Power BI Project -->
+<div class="modal" id="modal-powerbi-description">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-powerbi-description')">&times;</span>
+    
+    <h3>Power BI Disbursement Analysis</h3>
 
-                <strong>
-                    Data Sets: 
-                </strong>
-                    <ul>
-                       <li>Static data: Disbursements, Recipient Payments, Recipient Feedback, Apartment Names​ </li>
-                       <li>Census Data: Income, Population, Business, Unemployment rates, Education, Housing, Poverty, and Family Demographics ​</li>
-                       <li>The static data was given by the company as a means of looking into their disbursement refund program. </li>
-                       <li>The census data was collected by us to enable data driven insights into the program with regards to the outside factors listed above. </li>
-                   <ul>
-            </div>
-        </div>
+    <h4> Overview</h4>
+    <ul>
+      <li>Enhanced transparency and efficiency of rental deposit refund payments using data analytics.</li>
+      <li>Analyzed anonymized datasets on disbursements, recipients, and properties to extract financial insights.</li>
+      <li>Built Power BI reports for performance tracking, error detection, and identifying geo/demographic trends.</li>
+      <li>Integrated Microsoft Fabric Lakehouse with SQL + Python to automate reporting and decision support.</li>
+    </ul>
+
+    <h4> Technologies Used</h4>
+    <ul>
+      <li><strong>Microsoft Fabric</strong> – Lakehouse storage and PySpark SQL transformation</li>
+      <li><strong>Power BI Desktop</strong> – Interactive dashboards, DAX, and visuals</li>
+      <li><strong>Python (matplotlib, seaborn)</strong> – Custom visualizations and correlation analysis</li>
+      <li><strong>DAX</strong> – KPI calculations, dynamic fields, and grouped comparisons</li>
+    </ul>
+
+    <h4>Data Sources</h4>
+    <ul>
+      <li><strong>Static Data</strong>: Disbursements, Recipient Payments, Feedback, Apartment Names</li>
+      <li><strong>Census Data</strong>: Income, Business activity, Unemployment, Education, Housing, Poverty, Family Demographics</li>
+      <li>Static data was provided by the company to evaluate refund program effectiveness.</li>
+      <li>Census data was collected to uncover external socioeconomic factors affecting completion rates.</li>
+    </ul>
+  </div>
+</div>
+
           
         <!-- Preview Modal -->
         <div class="modal" id="modal-powerbi-screenshots">
