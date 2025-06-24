@@ -467,7 +467,31 @@
     border: 2px solid #333;
     border-radius: 8px;
   }
-  
+
+  .modal-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #00c8ff;
+  }
+
+  .modal-content h4 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+
+ .modal-content ul {
+   margin-left: 1.2rem;
+   padding-left: 1rem;
+   list-style: disc;
+ }
+
+ .modal-content ul li {
+   margin-bottom: 0.5rem;
+   color: #cccccc;
+ }
+
   /* Close Button */
   .close {
     color: #ffffff;
