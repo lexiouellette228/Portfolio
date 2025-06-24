@@ -37,6 +37,10 @@ View Portfolio (https://portfolio-pi-five-2tv1yi73mk.vercel.app/)
 
 ---
 
+## Author
+- Lexi Ouellette
+
+---
 ## License
 
 This project is open-source and free to use. Attribution will be greatly appreciated. 
