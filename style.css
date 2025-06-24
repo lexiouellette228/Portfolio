@@ -481,16 +481,18 @@
     color: #ffffff;
   }
 
- .modal-content ul {
-   margin-left: 1.2rem;
-   padding-left: 1rem;
-   list-style: disc;
+  .modal-content ul {
+    list-style-type: disc;
+    padding-left: 1.2rem; 
+    margin: 0 0 1rem 0;
  }
 
- .modal-content ul li {
-   margin-bottom: 0.5rem;
-   color: #cccccc;
- }
+  .modal-content ul li {
+    margin: 0.25rem 0;
+    padding-left: 0;     
+    line-height: 1.6;
+    color: #cccccc;
+  }
 
   /* Close Button */
   .close {
