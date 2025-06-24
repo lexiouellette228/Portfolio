@@ -170,15 +170,45 @@
         <!-- Project Card --> 
         <div class="project-card">
             <h3>Property Manager Reporting & Insights</h3>
-            <p>This project leverages data analytics to improve the efficiency and transparency of rental deposit refund payments. Using Microsoft Fabric, SQL, and Python, it processes anonymized disbursement data to generate Power BI reports that highlight financial trends, anomalies, and geographic factors affecting payment outcomes.</p>
+            <p>This project leverages data analytics to improve the efficiency and transparency of rental deposit refund payments. Microsoft Fabric, PySpark SQL, DAX and Python.</p>
+            <a href="#projects" onclick="openModal('modal-powerbi-description')">Read More</a>
             <a href="https://github.com/lexiouellette228/Property-Manager-Reporting-Insights" target="_blank">GitHub</a>
-            <a href="#projects" onclick="openModal('modal-powerbi')">Preview</a>
+            <a href="#projects" onclick="openModal('modal-powerbi-screenshots')">Preview</a>
         </div>
 
-        <!-- Modal -->
+        <!-- Read More Modal -->
         <div class="modal" id="modal-powerbi">
             <div class="modal-content">
             <span class="close" onclick="closeModal('modal-powerbi')">&times;</span>
+                <p> 
+                    Overview: 
+                    This project focuses on leveraging data analytics to enhance the efficiency and transparency of rental deposit refund payments. 
+                    The project analyzes anonymized datasets related to disbursements, recipients, and properties to provide critical financial insights. 
+                    Key objectives include developing Power BI reports for high-level and granular performance tracking, identifying anomalies such as error spikes or payment expirations, and uncovering geographic and demographic trends impacting payment completion rates. 
+                    Utilizing Microsoft Fabric Lakehouse for data storage, along with SQL and Python for data processing, this project enhances decision-making through automated reporting.
+                </p>
+                <p>
+                    Technologies:  
+                    - Microsoft Fabric: For Lakehouse storage and PySpark SQL transformation
+                    - Power BI Desktop: For visual dashboards, DAX measures, and interactivity
+                    - Python (matplotlib, seaborn): For customized visuals and correlation plots
+                    - DAX: For dynamic field switching, KPI calculations, and group analysis
+                </p>
+                <p>
+                    Data Sets: 
+                    - Static data: Disbursements, Recipient Payments, Recipient Feedback, Apartment Names​
+                    - Census Data: Income, Population, Business, Unemployment rates, Education, Housing, Poverty, and Family Demographics ​
+                    - The static data was given by the company as a means of looking into their disbursement refund program. ​
+                    - The census data was collected by us to enable data driven insights into the program with regards to the outside factors listed above. 
+                </p>
+                
+            </div>
+        </div>
+          
+        <!-- Preview Modal -->
+        <div class="modal" id="modal-powerbi">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-powerbi-screenshots')">&times;</span>
             <img src="images/Disbursement_Report.png" alt="Power BI Screentshot 1" />
             <img src="images/Final_Report_1.png" alt="Power BI Screentshot 2" />
             <img src="images/Final_Report_2.png" alt="Power BI Screentshot 3" />
@@ -191,6 +221,7 @@
             <img src="images/Insight_Graph.png" alt="Power BI Screentshot 1" />
             </div>
         </div>
+
           
         <!-- Project Card --> 
         <div class="project-card">
