@@ -178,7 +178,7 @@
 
         <!-- Read More Modal -->
         <div class="modal" id="modal-powerbi-description">
-          <div class="modal-content">
+          <div class="modal-content ul">
             <span class="close" onclick="closeModal('modal-powerbi-description')">&times;</span>
             
             <h3>Property Manager Reporting & Insights</h3>
@@ -211,7 +211,7 @@
 
         <!-- Preview Modal -->
         <div class="modal" id="modal-powerbi-screenshots">
-            <div class="modal-content">
+            <div class="modal-content ul">
             <span class="close" onclick="closeModal('modal-powerbi-screenshots')">&times;</span>
             <img src="images/Disbursement_Report.png" alt="Power BI Screentshot 1" />
             <img src="images/Final_Report_1.png" alt="Power BI Screentshot 2" />
@@ -226,8 +226,54 @@
             </div>
         </div>
 
-          
         <!-- Project Card --> 
+        <div class="project-card">
+          <h3>Quantum Circuit Cutting</h3>
+          <p>Demonstration of quantum circuit cutting using Qiskit, IMBQ, and AerSimulator.</p>
+          <a href="#projects" onclick="openModal('modal-quantum-description')">Read More</a>
+          <a href="https://github.com/lexiouellette228/Quantum_Circuit_Cutting" target="_blank">GitHub</a>
+          <a href="#projects" onclick="openModal('modal-quantum')">Preview</a>
+        </div>
+
+        <!-- Read More Modal -->
+        <div class="modal" id="modal-quantum-description">
+          <div class="modal-content ul">
+            <span class="close" onclick="closeModal('modal-quantum-description')">&times;</span>
+            
+            <h3>Quantum Circuit Cutting</h3>
+            <h4> Overview </h4>
+            <ul>
+              <li>We used wire cutting to split a 7-qubit circuit into two 4-qubit circuits, allowing broader circuit decomposition at the cost of added overhead.</li>
+              <li>This method uses Move instructions—functionally like swap gates—to transfer quantum state information between the two circuit halves via an ancillary circuit.</li>
+              <li>Each subcircuit is executed separately, once on a simulator and once on IBMQ’s quantum hardware.</li>
+              <li>The resulting sub-experiment data is used to build Quasiprobability Distributions, which are then combined to reconstruct the expectation value of the original 7-qubit circuit.</li>
+            </ul>
+
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>Python</strong> – For writing quantum circuit logic, estimation functions, and handling data</li>
+              <li><strong>Qiskit – IBM's open-source quantum computing SDK used to</strong> – Build and cut quantum circuits,  Execute on simulators (AerSimulator) and real quantum hardware (IBMQ backend), and Use Estimator for expectation value calculations </li>
+              <li><strong>IBM Quantum (IBMQ)</strong> – Cloud-accessible quantum hardware for running real quantum circuits </li>
+              <li><strong>Qiskit Runtime / Estimator V2</strong> – Used as the interactive environment to write, run, and visualize the experiments</li>
+              <li><strong>Google Colab + Jupyter Notebook </strong> – Used as the interactive environment to write, run, and visualize the experiments</li>
+              <li><strong>NumPy</strong> - For numerical operations such as rounding and calculating relative errors</li>
+              <li><strong>Matplotlib</strong> - For visualizing outputs</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" id="modal-quantum">
+            <div class="modal-content ul">
+            <span class="close" onclick="closeModal('modal-quantum')">&times;</span>
+            <img src="images/QC1.png" alt="Quantum Project Screenshot 1" />
+            <img src="images/QC2.png" alt="Quantum Project Screenshot 2" />
+            <img src="images/QC3.png" alt="Quantum Project Screenshot 3" />
+            <img src="images/QC4.png" alt="Quantum Project Screenshot 4" />
+            </div>
+        </div>
+
+                <!-- Project Card --> 
         <div class="project-card">
             <h3>Appliance Store Website</h3>
             <p>React and Bootstrap based website that allows customers to view current inventory and learn more about the business. Deployed and managed with AWS.</p>
@@ -262,54 +308,7 @@
             </ul>
           </div>
         </div>
-
-        <!-- Project Card --> 
-        <div class="project-card">
-          <h3>Quantum Circuit Cutting</h3>
-          <p>Demonstration of quantum circuit cutting using Qiskit, IMBQ, and AerSimulator.</p>
-          <a href="#projects" onclick="openModal('modal-quantum-description')">Read More</a>
-          <a href="https://github.com/lexiouellette228/Quantum_Circuit_Cutting" target="_blank">GitHub</a>
-          <a href="#projects" onclick="openModal('modal-quantum')">Preview</a>
-        </div>
-
-        <!-- Read More Modal -->
-        <div class="modal" id="modal-quantum-description">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal('modal-quantum-description')">&times;</span>
-            
-            <h3>Quantum Circuit Cutting</h3>
-            <h4> Overview </h4>
-            <ul>
-              <li>We used wire cutting to split a 7-qubit circuit into two 4-qubit circuits, allowing broader circuit decomposition at the cost of added overhead.</li>
-              <li>This method uses Move instructions—functionally like swap gates—to transfer quantum state information between the two circuit halves via an ancillary circuit.</li>
-              <li>Each subcircuit is executed separately, once on a simulator and once on IBMQ’s quantum hardware.</li>
-              <li>The resulting sub-experiment data is used to build Quasiprobability Distributions, which are then combined to reconstruct the expectation value of the original 7-qubit circuit.</li>
-            </ul>
-
-            <h4> Tech Stack </h4>
-            <ul>
-              <li><strong>Python</strong> – For writing quantum circuit logic, estimation functions, and handling data</li>
-              <li><strong>Qiskit – IBM's open-source quantum computing SDK used to</strong> – Build and cut quantum circuits,  Execute on simulators (AerSimulator) and real quantum hardware (IBMQ backend), and Use Estimator for expectation value calculations </li>
-              <li><strong>IBM Quantum (IBMQ)</strong> – Cloud-accessible quantum hardware for running real quantum circuits </li>
-              <li><strong>Qiskit Runtime / Estimator V2</strong> – Used as the interactive environment to write, run, and visualize the experiments</li>
-              <li><strong>Google Colab + Jupyter Notebook </strong> – Used as the interactive environment to write, run, and visualize the experiments</li>
-              <li><strong>NumPy</strong> - For numerical operations such as rounding and calculating relative errors</li>
-              <li><strong>Matplotlib</strong> - For visualizing outputs</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal" id="modal-quantum">
-            <div class="modal-content">
-            <span class="close" onclick="closeModal('modal-quantum')">&times;</span>
-            <img src="images/QC1.png" alt="Quantum Project Screenshot 1" />
-            <img src="images/QC2.png" alt="Quantum Project Screenshot 2" />
-            <img src="images/QC3.png" alt="Quantum Project Screenshot 3" />
-            <img src="images/QC4.png" alt="Quantum Project Screenshot 4" />
-            </div>
-        </div>
-
+          
         <!-- Project Card --> 
         <div class="project-card">
           <h3>Wedding Planner Algorithms</h3>
@@ -321,7 +320,7 @@
 
         <!-- Read More Modal -->
         <div class="modal" id="modal-weddingalgo-description">
-          <div class="modal-content">
+          <div class="modal-content ul">
             <span class="close" onclick="closeModal('modal-weddingalgo-description')">&times;</span>
             
             <h3>Wedding Planner Algorithms</h3>
@@ -367,7 +366,7 @@
 
          <!-- Read More Modal -->
         <div class="modal" id="modal-planner-description">
-          <div class="modal-content">
+          <div class="modal-content ul">
             <span class="close" onclick="closeModal('modal-planner-description')">&times;</span>
             
             <h3>Wedding Planner Web Application</h3>
@@ -403,7 +402,7 @@
           
         <!-- Modal -->
         <div class="modal" id="modal-wedding-app">
-            <div class="modal-content">
+            <div class="modal-content ul">
             <span class="close" onclick="closeModal('modal-wedding')">&times;</span>
             <img src="images/Home.png" alt="Wedding Planner Home Page" />
             <img src="images/GuestList.png" alt= "Wedding Planner Guest List 1" />
@@ -428,7 +427,7 @@
 
          <!-- Read More Modal -->
         <div class="modal" id="modal-sp-description">
-          <div class="modal-content">
+          <div class="modal-content ul">
             <span class="close" onclick="closeModal('modal-sp-description')">&times;</span>
             
             <h3>Simple Protocol</h3>
