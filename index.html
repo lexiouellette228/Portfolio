@@ -337,6 +337,7 @@
               <li><strong>Python</strong></li>
           </div>
         </div>
+          
         <!-- Modal -->
         <div class="modal" id="modal-wedding">
             <div class="modal-content">
@@ -345,6 +346,15 @@
             <img src="images/TableCalculator.png" alt="Wedding Screenshot 2" />               
             </div>
         </div>
+                  <!-- Modal -->
+        <div class="modal" id="modal-wedding">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-wedding')">&times;</span>
+            <img src="images/SeatingChart1.png" alt="Wedding Screenshot 1" />
+            <img src="images/TableCalculator.png" alt="Wedding Screenshot 2" />               
+            </div>
+        </div>
+          
 
         <!-- Project Card --> 
         <div class="project-card">
@@ -391,14 +401,6 @@
           </div>
         </div>
           
-        <!-- Modal -->
-        <div class="modal" id="modal-wedding">
-            <div class="modal-content">
-            <span class="close" onclick="closeModal('modal-wedding')">&times;</span>
-            <img src="images/SeatingChart1.png" alt="Wedding Screenshot 1" />
-            <img src="images/TableCalculator.png" alt="Wedding Screenshot 2" />               
-            </div>
-        </div>
         <!-- Modal -->
         <div class="modal" id="modal-wedding-app">
             <div class="modal-content">
@@ -514,19 +516,75 @@
         <div class="project-card">
             <h3>Wedding Website</h3>
             <p>React based website that allows invited guests to RSVP securely, view event details, browse travel and accommodation info, and more.</p>
-            <a href="#projects" onclick="openModal('modal-powerbi-description')">Read More</a>
+            <a href="#projects" onclick="openModal('modal-wedding-website-description')">Read More</a>
             <a href="https://github.com/lexiouellette228/wedding-website" target="_blank">GitHub</a>
             <a href="https://www.lexiandmason.org/" target="_blank">Live Website</a>
         </div>
-          
 
+        <!-- Read More Modal -->
+        <div class="modal" id="modal-wedding-website-description">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-wedding-website-description')">&times;</span>
+
+            <h3>Wedding Website</h3>
+            <h4> Overview </h4>
+            <ul>
+              <li>Ability to enable a passwork protected login (currently disabled)</li>
+              <li>RSVP form with dynamic party guest assignment, results sent to Google Forms for storage and management.</li>
+              <li>Travel, Registry, Dress Code, and Gallery pages</li>
+              <li>Active wedding date countdown timer</li>
+              <li>Mobile-responsive, custom-designed UI</li>
+              <li>Backendless API endpoints deployed with Vercel</li>
+            </ul>
+
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>React</strong>Frontend framework</li>
+              <li><strong>CSS</strong>Custome styling</li>
+              <li><strong>Bootstap</strong>UI components</li>
+              <li><strong>Vercel</strong>Hosting and Backendless Functions</li>
+              <li><strong>Authentication</strong> Password and JWT</li>
+              <li><strong>Domain Management</strong>Namecheap (custom domain connected with Vercel)</li>
+            </ul>
+          </div>
+        </div>
+
+        
         <!-- Project Card --> 
         <div class="project-card">
           <h3>POS System</h3>
           <p>A full-stack point-of-sale app using React, SQLite, and Square APIs. Supports cart, invoice, and inventory features.</p>
-          <a href="#projects" onclick="openModal('modal-powerbi-description')">Read More</a>
+          <a href="#projects" onclick="openModal('modal-pos-description')">Read More</a>
           <a>GitHub (coming soon) </a>
           <a href="#projects" onclick="openModal('modal-pos')">Preview</a>
+        </div>
+
+         <!-- Read More Modal -->
+        <div class="modal" id="modal-wedding-pos-description">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-wedding-pos-description')">&times;</span>
+
+            <h3>POS System </h3>
+            <h4> Overview </h4>
+            <ul>
+              <li>Ability to enable a passwork protected login (currently disabled)</li>
+              <li>RSVP form with dynamic party guest assignment, results sent to Google Forms for storage and management.</li>
+              <li>Travel, Registry, Dress Code, and Gallery pages</li>
+              <li>Active wedding date countdown timer</li>
+              <li>Mobile-responsive, custom-designed UI</li>
+              <li>Backendless API endpoints deployed with Vercel</li>
+            </ul>
+
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>React</strong>Frontend framework</li>
+              <li><strong>CSS</strong>Custome styling</li>
+              <li><strong>Bootstap</strong>UI components</li>
+              <li><strong>Vercel</strong>Hosting and Backendless Functions</li>
+              <li><strong>Authentication</strong> Password and JWT</li>
+              <li><strong>Domain Management</strong>Namecheap (custom domain connected with Vercel)</li>
+            </ul>
+          </div>
         </div>
 
         <!-- Modal -->
@@ -550,9 +608,45 @@
         <div class="project-card">
             <h3>Digital Treasure Hunt</h3>
             <p>An interactive web application designed to engage users in solving a series of puzzles and clues to find the hidden treasure.</p>
-            <a href="#projects" onclick="openModal('modal-powerbi-description')">Read More</a>
+            <a href="#projects" onclick="openModal('modal-cyber-description')">Read More</a>
             <a href="https://github.com/lexiouellette228/DigitalTreasureHunt" target="_blank">GitHub</a>
             <a href="#projects" onclick="openModal('modal-cyber')">Preview</a>
+        </div>
+
+                 <!-- Read More Modal -->
+        <div class="modal" id="modal-cyber-description">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-cyber-description')">&times;</span>
+
+            <h3>Digital Treaure Hunt </h3>
+            <h4> Overview </h4>
+            <ul>
+              <li>The Cyber Treasure Map project is an interactive web application designed to engage users in solving a series of puzzles and clues to find the hidden treasure.</li>
+              <li>The map incorporates various elements and icons that users can click on to receive hints and guidance.</li>
+              <li>This activity was created following the Tennessee State Standards and Cyber Standards. </li>
+              <li>All quests in this activity are STEM related and scalable by grade/age level.</li>
+              <li>Stem Related Quests Include: </li>
+                <ul>
+                    <li>Ceaser Cipher</li>
+                    <li>Math Problem</li>
+                    <li>Decryption</li>
+                    <li>Critical Thinking</li>
+                    <li>Problem Solving</li>
+                    <li>Context Clues</li>
+                </ul>
+              <li>Can be used with or without an Arduino/Keypad </li>
+            </ul>
+
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>HTML</strong>Frontend framework</li>
+              <li><strong>CSS</strong>Custom styling</li>
+              <li><strong>Bootstap</strong>UI components</li>
+              <li><strong>SweetAlert</strong>Dor Flert dialogs</li>
+              <li><strong>jQuery</strong>For DOM manipulation</li>
+              <li><strong>Local Host</strong>This activity can be used with or without a VM (Virtual Machine)</li>
+            </ul>
+          </div>
         </div>
 
         <!-- Modal -->
@@ -580,10 +674,41 @@
         <!-- Project Card --> 
         <div class="project-card">
             <h3>Portfolio Website (this website)</h3>
-            <p>A fully responsive and interactive personal portfolio website built with HTML, CSS, and JavaScript. It showcases my projects, technical skills, and contact information with animations, a modern design, and a dynamic contact form.</p>
-            <a href="#projects" onclick="openModal('modal-powerbi-description')">Read More</a>
+            <p>A fully responsive and interactive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+            <a href="#projects" onclick="openModal('modal-portfolio-description')">Read More</a>
             <a href="https://github.com/lexiouellette228/Portfolio" target="_blank">GitHub</a>
-            <a>You are viewing the live website, deployed using Vercel. </a>
+            <p>You are currently viewing the live website. </p>
+        </div>
+
+        <!-- Read More Modal -->
+        <div class="modal" id="modal-wedding-portfolio-description">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-portfolio-description')">&times;</span>
+
+            <h3>Portfolio Website </h3>
+            <h4> Overview </h4>
+            <ul>
+              <li>It showcases my projects, technical skills, and contact information.</li>
+              <li>Responsive design for mobile and desktop</li>
+              <li>Animated hero section with profile image<li>
+              <li>Smooth scrolling and active nav highlighting</li>
+              <li>Sticky social media sidebar (GitHub, LinkedIn, Email)</li>
+              <li>Grouped tech stack with tooltips and icon animations</li>
+              <li>Modal popups with project screenshots</li>
+              <li>Contact form with SweetAlert2 confirmation and Formspree integration</li>
+            </ul>
+
+            <h4> Tech Stack </h4>
+            <ul>
+              <li><strong>HTML5</strong>Frontend framework</li>
+              <li><strong>CSS3</strong>Custom styling</li>
+              <li><strong>JavaScript</strong>Dynamic styling</li>
+              <li><strong>Responsive Grid + Flexbox</strong></li>
+              <li><strong>SweetAlert2</strong>Form popups</li>
+              <li><strong>IntersectionObserver</strong>Aminations</li>
+              <li><strong>Domain Management</strong>Namecheap (custom domain connected with Vercel)</li>
+            </ul>
+          </div>
         </div>
           
       </div>
