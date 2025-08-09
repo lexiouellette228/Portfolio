@@ -506,4 +506,36 @@
   .close:hover {
     color: #ff00b3;
   }
+
+  .book-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 2%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 2px solid #25c9f7;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
+  }
+
+  .book-info {
+    color: #ff00b3;
+    margin: 0.5rem 0;
+  }
+
+  .book-img-cab {
+    width: 160px;
+    height: 220px;
+    border-radius: 2%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 2px solid #25c9f7;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
+  }
+
+  .book-info p {
+    color: #cccccc;
+    margin: 0.5rem 0;
+    text-align: left;
+  }
+  
   
